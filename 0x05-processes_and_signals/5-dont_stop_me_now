@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 # bash script that stops infinity and beyond
 
-pid=$(pgrep -f "to_infinity_and_beyond")
-
-if [ -n "$pid" ]; then
-    # If the process is running, forcefully kill it
-    kill -9 "$pid"
-    echo "Process with PID $pid stopped successfully."
-else
-    echo "Process 'to_infinity_and_beyond' is not running."
-fi
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+kill "$pid"
