@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bash script that stops infinity and beyond
+
+pkill -f "To_infinity_and_beyond" && echo "Process 'To_infinity_and_beyond' stopped successfully." || echo "Process 'To_infinity_and_beyond' is not running."
+
