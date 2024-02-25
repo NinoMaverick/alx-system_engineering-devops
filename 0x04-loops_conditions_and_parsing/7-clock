@@ -10,4 +10,6 @@ while [ $hour -le 12 ]; do
     done
     hour=$((hour + 1))
     minute=1
+
+    
 done

@@ -20,5 +20,7 @@ do
             echo "$count"
             ;;
     esac
+
+    
     ((count++))
 done
