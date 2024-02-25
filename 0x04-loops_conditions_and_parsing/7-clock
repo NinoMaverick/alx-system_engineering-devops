@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Script that displays the time
+hour=0
+minute=1
+
+while [ $hour -le 12 ]; do
+    while [ $minute -le 59 ]; do
+        printf "%02d:%02d\n" $hour $minute
+        minute=$((minute + 1))
+    done
+    hour=$((hour + 1))
+    minute=1
+done
